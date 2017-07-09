@@ -1,3 +1,4 @@
+/* Global setup */
 html{
   font-family: Helvetica, sans-serif;
   font-size: 22px;
@@ -6,7 +7,10 @@ html{
   opacity: 0.9;
   text-align: center;
 }
-
+h2, h3, h4{
+  margin: 0;
+  padding: 10px;
+}
 /* Header area */
 header{
   position: fixed;
@@ -19,6 +23,7 @@ header{
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
 }
 header img{
   height: 50px;
@@ -35,5 +40,20 @@ header nav a
 
 /* Main area */
 main{
-  padding-top: 70px;
+  padding-top: 60px;
+}
+
+/* Mission section */
+#mission{
+  height: 700px;
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  background-image: url("../images/img-mission-background.jpg");
+  justify-content: center;
+  align-items: center;
+}
+.mission-statement{
+  background-color: black;
+  width: 100%;
 }
