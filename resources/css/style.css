@@ -11,8 +11,8 @@ h2, h3, h4{
   margin: 0;
   padding: 10px;
 }
-/* Header area */
-header{
+/* Top bar area */
+header.top-bar{
   position: fixed;
   z-index: 5;
   top: 0;
@@ -25,14 +25,14 @@ header{
   align-items: center;
   background-color: black;
 }
-header img{
+header.top-bar img{
   height: 50px;
   padding-left: 10px;
 }
-header nav{
+header.top-bar nav{
   margin-right: 10px;
 }
-header nav a
+header.top-bar nav a
 {
   color: seashell;
   padding: 0 5px;
@@ -56,4 +56,26 @@ main{
 .mission-statement{
   background-color: black;
   width: 100%;
+}
+
+/* Featured tea section */
+#featured{
+  width: 1000px;
+  margin: auto;
+}
+.tea-list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.tea{
+  margin: 15px;  
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.tea img{
+  height: 200px;
+  width: 300px;
+  margin-bottom: 10px;
 }
