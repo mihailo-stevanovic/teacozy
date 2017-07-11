@@ -11,18 +11,29 @@ h2, h3, h4{
   margin: 0;
   padding: 10px;
 }
+.flex, .flex-align-center, .flex-justify-center, .flex-column{
+  display: flex;
+}
+.flex-align-center{
+  align-items: center;
+}
+.flex-justify-center{
+  justify-content: center;
+}
+.flex-column{
+  flex-direction: column;
+}
+
 /* Top bar area */
 header.top-bar{
   position: fixed;
   z-index: 5;
   top: 0;
   left: 0;
-  display: flex;
   height: 69px;
   border-bottom: 1px solid seashell;
   width: 100%;
   justify-content: space-between;
-  align-items: center;
   background-color: black;
 }
 header.top-bar img{
@@ -39,6 +50,9 @@ header.top-bar nav a
 }
 
 /* Main area */
+main{
+  opacity: 0.9;
+}
 section{
   width: 1200px;
   margin: 40px auto;
@@ -48,10 +62,7 @@ section{
 /* Mission section */
 #mission{
   height: 700px;
-  display: flex;
   background-image: url("../images/img-mission-background.jpg");
-  justify-content: center;
-  align-items: center;
 }
 .mission-statement{
   background-color: black;
@@ -64,15 +75,10 @@ section{
   margin: auto;
 }
 .tea-list{
-  display: flex;
-  justify-content: center;
   flex-wrap: wrap;
 }
 .tea{
   margin: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 .tea img{
   height: 200px;
@@ -82,16 +88,12 @@ section{
 
 /* Locations section */
 #locations{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   height: 500px;
   width: 1200px;
   background-image: url("../images/img-locations-background.jpg");
   margin-bottom: 0;
 }
 .location-list{
-  display: flex;
   margin-top: 15px;
 }
 .location{
@@ -99,17 +101,12 @@ section{
   margin: 5px 20px;
   background-color: black;
   width: 280px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 /* Contact section */
 .contact{
   padding-top: 0;
   height: 200px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 /* Footer area */
